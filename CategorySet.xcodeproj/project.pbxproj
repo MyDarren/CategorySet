@@ -14,6 +14,8 @@
 		189C827F20D3BAB20060FFF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189C827D20D3BAB20060FFF0 /* LaunchScreen.storyboard */; };
 		189C828220D3BAB20060FFF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C828120D3BAB20060FFF0 /* main.m */; };
 		189C828B20D3BCB90060FFF0 /* NSString+DASecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C828A20D3BCB90060FFF0 /* NSString+DASecurity.m */; };
+		522A284A20FB031F00AF70A9 /* NSString+DADeviceID.m in Sources */ = {isa = PBXBuildFile; fileRef = 522A284920FB031F00AF70A9 /* NSString+DADeviceID.m */; };
+		522A285120FB05E200AF70A9 /* DASSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 522A285020FB05E200AF70A9 /* DASSKeychain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		189C828120D3BAB20060FFF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		189C828920D3BCB90060FFF0 /* NSString+DASecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DASecurity.h"; sourceTree = "<group>"; };
 		189C828A20D3BCB90060FFF0 /* NSString+DASecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DASecurity.m"; sourceTree = "<group>"; };
+		522A284820FB031F00AF70A9 /* NSString+DADeviceID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DADeviceID.h"; sourceTree = "<group>"; };
+		522A284920FB031F00AF70A9 /* NSString+DADeviceID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DADeviceID.m"; sourceTree = "<group>"; };
+		522A284F20FB05E200AF70A9 /* DASSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DASSKeychain.h; sourceTree = "<group>"; };
+		522A285020FB05E200AF70A9 /* DASSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DASSKeychain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		189C827120D3BA950060FFF0 /* CategorySet */ = {
 			isa = PBXGroup;
 			children = (
+				522A284D20FB05E200AF70A9 /* ThirdParty */,
 				189C828820D3BCB90060FFF0 /* Category */,
 				189C827220D3BA950060FFF0 /* AppDelegate.h */,
 				189C827320D3BA950060FFF0 /* AppDelegate.m */,
@@ -80,8 +87,27 @@
 			children = (
 				189C828920D3BCB90060FFF0 /* NSString+DASecurity.h */,
 				189C828A20D3BCB90060FFF0 /* NSString+DASecurity.m */,
+				522A284820FB031F00AF70A9 /* NSString+DADeviceID.h */,
+				522A284920FB031F00AF70A9 /* NSString+DADeviceID.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		522A284D20FB05E200AF70A9 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				522A284E20FB05E200AF70A9 /* SSKeyChain */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		522A284E20FB05E200AF70A9 /* SSKeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				522A284F20FB05E200AF70A9 /* DASSKeychain.h */,
+				522A285020FB05E200AF70A9 /* DASSKeychain.m */,
+			);
+			path = SSKeyChain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +184,8 @@
 				189C827720D3BA950060FFF0 /* ViewController.m in Sources */,
 				189C828220D3BAB20060FFF0 /* main.m in Sources */,
 				189C827420D3BA950060FFF0 /* AppDelegate.m in Sources */,
+				522A285120FB05E200AF70A9 /* DASSKeychain.m in Sources */,
+				522A284A20FB031F00AF70A9 /* NSString+DADeviceID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
